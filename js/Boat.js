@@ -1,5 +1,4 @@
-class Boat {
-  constructor(x, y, width, height, boatPos) {
+???
   
     this.body = Bodies.rectangle(x, y, width, height);
     this.width = width;
