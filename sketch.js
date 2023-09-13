@@ -6,7 +6,7 @@ const Constraint = Matter.Constraint;
 var engine, world, backgroundImg,boat;
 var canvas, angle, tower, ground, cannon;
 var balls = [];
-var boats = [];
+???
 
 function preload() {
   backgroundImg = loadImage("./assets/background.gif");
@@ -49,9 +49,7 @@ function draw() {
 
   showBoats();
 
-  for (var i = 0; i < balls.length; i++) {
-    showCannonBalls(balls[i], i);
-  }
+  ???
 
   cannon.display();
 }
@@ -71,18 +69,7 @@ function showCannonBalls(ball, index) {
   }
 }
 
-function showBoats() {
-  if (boats.length > 0) {
-    if (
-      boats[boats.length - 1] === undefined ||
-      boats[boats.length - 1].body.position.x < width - 300
-    ) {
-      var positions = [-40, -60, -70, -20];
-      var position = random(positions);
-      var boat = new Boat(width, height - 100, 170, 170, position);
-
-      boats.push(boat);
-    }
+???
 
     for (var i = 0; i < boats.length; i++) {
       if (boats[i]) {
